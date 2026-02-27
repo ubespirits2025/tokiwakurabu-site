@@ -280,4 +280,7 @@ input,textarea{width:100%;padding:10px;border:1px solid #d7dbe6;border-radius:10
 /* 2つ目だけ赤 */
 .btn:last-child{
   background:linear-gradient(135deg,#e10600,#7a0000);
+  .btn{
+  outline: 6px solid lime !important;
+  background: red !important;
 }

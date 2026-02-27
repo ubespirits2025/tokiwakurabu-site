@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>常盤クラブ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>宇部市少年野球常盤クラブ</h1>
+      <p>「楽しく、全力で。」新入部員募集中！</p>
+      <a class="btn" href="#contact">体験参加はこちら</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>チーム紹介</h2>
+      <p>活動エリア：宇部市立常盤小学校　亀浦公園グラウンド / 対象：小1〜小6 / 活動日：火,金,土,日</p>
+      <ul>
+        <li>指導方針：あいさつ・礼儀・仲間を大切に</li>
+        <li>保護者負担：〇〇（例：当番は月1回程度）</li>
+      </ul>
+    </section>
+
+    <section id="news" class="card">
+      <h2>お知らせ</h2>
+      <ul>
+        <li>2026/03/10 体験会を開催します（〇〇グラウンド）</li>
+        <li>2026/03/01 新ユニフォームになりました</li>
+      </ul>
+    </section>
+
+    <section id="schedule" class="card">
+      <h2>予定</h2>
+      <p>Googleスプレッドシート連携も可能（後で追加できる）</p>
+      <ul>
+        <li>3/2（土） 練習 9:00〜 〇〇グラウンド</li>
+        <li>3/9（土） 練習試合 vs △△ 〇〇球場</li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2>ギャラリー</h2>
+      <div class="grid">
+        <img src="images/photo1.jpg" alt="試合の様子">
+        <img src="images/photo2.jpg" alt="練習の様子">
+        <img src="images/photo3.jpg" alt="集合写真">
+      </div>
+      <p class="note">※写真はあとで差し替えOK</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>お問い合わせ</h2>
+      <p>体験参加・質問はこちらから</p>
+
+      <!-- 一番簡単：FormSubmit（サーバー不要） -->
+      <form action="https://formsubmit.co/あなたのメールアドレス" method="POST">
+        <input type="hidden" name="_subject" value="体験参加・お問い合わせ（少年野球）">
+        <input type="hidden" name="_captcha" value="false">
+        <label>お名前<input name="name" required></label>
+        <label>メール<input type="email" name="email" required></label>
+        <label>内容<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">送信</button>
+      </form>
+
+      <p class="note">※メールアドレスは後であなたのに差し替え</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© 〇〇少年野球クラブ</small>
+    </div>
+  </footer>
+</body>
+</html>

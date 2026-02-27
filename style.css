@@ -398,4 +398,127 @@ input,textarea{width:100%;padding:10px;border:1px solid #d7dbe6;border-radius:10
   .hero h1{ font-size: 34px; }
   .hero-buttons .btn{ min-width: 140px; }
   .schedule-wrap{ margin-top: -56px; }
+  /* ===== 試合予定：豪華カード版 ===== */
+.schedule-wrap{
+  margin: 24px auto;
+  padding: 0 10px 30px;
+}
+
+.section-title{
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 8px 0 18px;
+  color:#111;
+  text-shadow: 0 2px 0 rgba(0,0,0,0.08);
+}
+
+.schedule-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* カード本体 */
+.game-card{
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.88);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.game-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* 日付バッジ */
+.date-badge{
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(17,17,17,0.95), rgba(0,0,0,0.75));
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding: 10px 8px;
+}
+
+.date-badge .month{
+  font-size: 14px;
+  opacity: .9;
+  font-weight: 700;
+}
+
+.date-badge .day{
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 4px 0;
+}
+
+.date-badge .week{
+  font-size: 13px;
+  opacity: .9;
+  font-weight: 700;
+}
+
+/* 試合内容 */
+.game-title{
+  font-size: 20px;
+  font-weight: 900;
+  margin: 2px 0 8px;
+  color:#111;
+}
+
+.game-meta{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  align-items:center;
+  margin-bottom: 8px;
+}
+
+.meta{
+  font-size: 14px;
+  color:#333;
+  font-weight: 700;
+  background: rgba(0,0,0,0.05);
+  border-radius: 999px;
+  padding: 6px 10px;
+}
+
+.tag{
+  font-size: 13px;
+  font-weight: 900;
+  color:#fff;
+  background: #e11d48;
+  border-radius: 999px;
+  padding: 6px 10px;
+  letter-spacing: 1px;
+}
+
+.tag-blue{
+  background:#2563eb;
+}
+
+.game-note{
+  font-size: 14px;
+  color:#222;
+  opacity: .9;
+  font-weight: 700;
+}
+
+/* PCで横並びにする */
+@media (min-width: 900px){
+  .schedule-grid{
+    grid-template-columns: 1fr 1fr;
+  }
 }

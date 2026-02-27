@@ -9,15 +9,20 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hi
   background-position:center;
   background-repeat:no-repeat;
 
-  height:400px;  
+  height:320px;
 
   display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:flex-start;   
+  justify-content:center;     
+  align-items:flex-start;     
+
+  padding-left:40px;          
   color:#fff;
 }
-.hero h1{margin:0 0 8px;font-size:40px}
+.hero h1{
+  font-size:36px;
+  font-weight:900;
+  text-shadow:0 6px 20px rgba(0,0,0,.4);
+}
 .hero p{margin:0 0 16px;opacity:.95}
 .btn{
   display:inline-flex;
